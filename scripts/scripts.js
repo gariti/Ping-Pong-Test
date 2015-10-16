@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
     var userNumber = $("#input-field").val(); //get value from input-field
     
     if (userNumber <= 0) {
-      alert("Error! You must enter a positive number greater than zero.");
+      alert("Error! You must enter a positive number (greater than zero).");
     } else {
       alert("You entered: " + userNumber);
       //loop from 1 to the number the user entered

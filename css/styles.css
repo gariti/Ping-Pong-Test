@@ -1,0 +1,12 @@
+body {
+  margin: 50px
+}
+
+ul {
+  display: none;
+  list-style: none;
+}
+
+.form-group {
+  max-width: 500px;
+}

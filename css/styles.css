@@ -9,3 +9,7 @@ ul {
 .form-group {
   max-width: 500px;
 }
+
+#video {
+  display: none;
+}

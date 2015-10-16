@@ -3,11 +3,15 @@ jQuery(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault(); //prevent default form submit
     var userNumber = $("#input-field").val(); //get value from input-field
-    
+    $("#input-field").val(""); //clear value from input-field;
+    $("#video").hide(); //hide the video
+    $("ul").empty(); //remove any existing list items
+
+    //error check: make sure the number is valid
     if (userNumber <= 0) {
       alert("Error! You must enter a positive number (greater than zero).");
     } else {
-      alert("You entered: " + userNumber);
+      console.log("You entered: " + userNumber);
       //loop from 1 to the number the user entered
       for (var i = 1; i <= userNumber; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
@@ -20,6 +24,7 @@ jQuery(document).ready(function() {
           $("ul").append("<li>" + i + "</li>"); //else insert current number  
         }
       };
+      $("#video").fadeIn(); //show the epic ping pong video! Just because I love ping pong :)
     }
   });
 });

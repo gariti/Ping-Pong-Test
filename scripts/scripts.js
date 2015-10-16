@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
     } else {
       alert("You entered: " + userNumber);
       //loop from 1 to the number the user entered
-      for (var i = 1; i < userNumber; i++) {
+      for (var i = 1; i <= userNumber; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
           $("ul").append("<li>ping-pong</li>"); //if divisible by 3 and 5 insert 'ping-pong'
         } else if (i % 3 === 0) {
